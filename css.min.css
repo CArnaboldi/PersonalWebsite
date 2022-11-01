@@ -8,14 +8,27 @@ body {
     display:flex;
     justify-content: center;
     width: 100%;
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+.q1zh_q-el-header.x-t-c1-highlight {
+    background: #90c0c9;
+    background: linear-gradient(to right, #90c0c9, #4CA1AF);
+    
+}
+
+.q1zh_q-el-header.x-t-c1-highlight * {
+    color: rgb(60, 60, 60)!important;
+}
+
 .ca-main {
-    background-color:rgba(255,255,255, 0.8)!important;
+    background-color:rgba(255,255,255, 0.7)!important;
 }
 
 body > div {
