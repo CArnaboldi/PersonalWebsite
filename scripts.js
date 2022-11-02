@@ -6,8 +6,14 @@ document.addEventListener('click', function (event) {
     var elements = document.getElementsByClassName('initially-hidden');
 
     for(var el of elements){
-        el.classList.toggle('fade');
+        el.setAttribute("style", "display:block!important");        
     }
 
-    document.getElementById('show-more-btn').classList.add('initially-hidden');
+    setTimeout(() => {
+        for(var el of elements){
+            el.classList.toggle('fade');           
+        }
+
+        document.getElementById('show-more-btn').classList.add('initially-hidden');
+    }, 50);
 });
